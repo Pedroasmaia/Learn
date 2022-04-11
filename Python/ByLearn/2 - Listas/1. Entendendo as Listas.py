@@ -12,6 +12,9 @@ def numeros():
 numeros()
 
 # Motivação das listas: Trabalhar com um varios valores, relacionados a uma só variavel
+
+#Listas dão tipos de dados que armazenam vários valores em uma variavel só
+#Em listas trabalhamos com índices, e iniciam sempre com 0
 primeira__lista = ['Felipe','Alisson' , 'Haynes', 'ByLearner']
 #-------Posição---[---1°-------2°==========3°----------4°]
 #-------Indice---[---0°-------1°==========2°----------3°]
