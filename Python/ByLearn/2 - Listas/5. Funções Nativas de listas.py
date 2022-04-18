@@ -64,3 +64,8 @@ embaralhada = [90,85,88,10]
 organizada = sorted(embaralhada)
 print(embaralhada)
 print(organizada)
+
+    # len() => Retorna o tamanho da lista
+
+total = [1,2,3,4,5]
+print(len(total))
