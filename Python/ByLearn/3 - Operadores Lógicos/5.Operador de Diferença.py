@@ -1,0 +1,10 @@
+def main():
+    numero1 = 2
+    numero2 = 3
+
+    if numero1 != numero2:
+        print('Os numeros são diferentes')
+    else:
+        print('Os numeros são iguais')
+    
+main()
