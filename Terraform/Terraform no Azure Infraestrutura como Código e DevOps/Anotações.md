@@ -81,3 +81,28 @@
 - Provisionamento: Criar, alterar e excluir recursos.
 - Configurações: Terraform não faz, mas é bom conhecer o *Ansible*
 
+# Módulo 2 | Terraform - Básico:
+
+## Terraform:
+
+- Significa de *Modelar a Terra*
+- Ferramenta declarativa de provisionamento automatizado
+- Lançamento em Maio/2014
+- Linguagem própria chamada *HCL*
+- Extensão .tf
+- Multiprovedor
+- Curva de aprendizagem baixa
+- Foi desenvolvido usando *GO*
+
+## Como o Terraform funciona:
+
+O Terraform contem dois componentes principais:
+
+- **Core:** O Centro do terraform, e temos duas entradas principais:
+    - As *configurações* que damos a ele, do que será configurado na nossa infraestrutura
+    - E o *State* o estado atual do setup
+    ~~~terraform
+        terraform plan
+        #É aqui que ele faz a comparação do que vai ser alterado
+    ~~~
+- **Providers:** Os provedores que convertem o nosso código em serviços
