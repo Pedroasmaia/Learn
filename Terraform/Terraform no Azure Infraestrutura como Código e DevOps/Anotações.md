@@ -8,7 +8,7 @@
 
 ### Analytics:
 
-- **Azure Databricks:** É um serviço de analise rapida e colaborativa, baseado no *Apache Spark* voltado para *AI* e *Big data*
+- **Azure Databricks:** É um serviço de analise rápida e colaborativa, baseado no *Apache Spark* voltado para *AI* e *Big data*
 - **Azure Stream Analytics:** É um serviço de analise em tempo real sobre demanda para *IoT*
 - **Azure Datafactory** É um *ETL* na nuvem
 
@@ -106,3 +106,39 @@ O Terraform contem dois componentes principais:
         #É aqui que ele faz a comparação do que vai ser alterado
     ~~~
 - **Providers:** Os provedores que convertem o nosso código em serviços
+
+# [Módulo 6 | Terraform - Remote State:](./6-Remote%20State/)
+
+- O Estado do Provisionamento fica salvo em um arquivo chamado *terraform.state*
+- Salvando ele de forma remota trás alguns benefícios:
+    - A possibilidade de travar alguns recursos (Como Locks de tabelas em SQL).
+    - Trabalhar em equipe.
+- Trabalhando com Azure iremos utilizar o *Azure Blob Storage*.
+
+## Azure Storage:
+
+- Tipos de armazenamento:
+    - Standard:
+        - Blob.
+        - Table.
+        - File.qq
+        - Queue.
+    - Premium:
+        - VM Disk.
+- Características:
+    - Durável.
+    - Redundância.
+    - Replicar dados por Data Center.
+    - Criptografados pelo serviço.
+    - Escalonável.
+    - Controle de Acesso.
+    - Acessível por *HTTP* ou *HTTPS*.
+- O Ponto de acesso é sempre: http>//{account}.blob.core.windows.net/{container}/{blobname}
+
+## Backend Terraform:
+O Backend do terraform identifica onde o Estado é armazenado e onde suas operações são realizadas.
+
+## Azure Cloud Shell:
+É uma opção de shell no navegador, podendo escolher entre *powershell* e o *Bash* para escrever.
+
+## Configurando o Remote Backend:
