@@ -142,3 +142,4 @@ O Backend do terraform identifica onde o Estado é armazenado e onde suas opera�
 É uma opção de shell no navegador, podendo escolher entre *powershell* e o *Bash* para escrever.
 
 ## Configurando o Remote Backend:
+- Consultar arquivo: [main.tf](./6-Remote%20State/main.tf)
