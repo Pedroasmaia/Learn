@@ -86,7 +86,7 @@
 - Provisionamento: Criar, alterar e excluir recursos.
 - Configurações: Terraform não faz, mas é bom conhecer o *Ansible*
 
-# Módulo 2 | Terraform - Básico:
+# [Módulo 2 | Terraform - Básico:](./2-Terraform%20Basico/)
 
 ## Terraform:
 
@@ -98,6 +98,8 @@
 - Multiprovedor
 - Curva de aprendizagem baixa
 - Foi desenvolvido usando *GO*
+- Link para download: [https://www.terraform.io/downloads.html](https://www.terraform.io/downloads.html)
+- Sempre colocar o executável nas variáveis de ambiente
 
 ## Como o Terraform funciona:
 
@@ -111,6 +113,34 @@ O Terraform contem dois componentes principais:
         #É aqui que ele faz a comparação do que vai ser alterado
     ~~~
 - **Providers:** Os provedores que convertem o nosso código em serviços
+
+## Componentes do Terraform:
+- Terraform Executável
+- Arquivos terraform, contendo duas extensões:
+    - tfvars: Que contem as variáveis.
+    - .tf: arquivos lidos pelo terraform.
+- Plugins(Opcionais), que interagem com nossos *providers*
+- Terraform.state, serve para salvar o estado do terraform
+
+
+## Estágios do Terraform:
+- Terraform Init: Inicia o Terraform, baixando os providers e recursos declarados.
+- Terraform Validate: Aponta os erros na codificação.
+- Terraform Plan: Indica as modificações na infraestrutura constante no tfstate, criações, modificações e exclusão de recursos.
+    - Terraform Plan --destroy: Planeja a exclusão da infraestrutura.
+- Terraform Apply: Efetua o provisionamento
+- Terraform Destroy: Destrói toda a infraestrutura no código.
+- Terraform Show: Fornece saída legível a partir do tfstate.
+
+## Estrutura do arquivo .TF:
+
+- Linguagem Declarativa
+- Conferir arquivo: [Estrutura.tf](./2-Terraform%20Basico/Estrutura.tf)
+
+
+## Providers:
+- É um componente responsável por interagir com as APIS
+- Utilitários locais para tarefas(Exemplo gerar números randômicos)
 
 # [Módulo 6 | Terraform - Remote State:](./6-Remote%20State/)
 
