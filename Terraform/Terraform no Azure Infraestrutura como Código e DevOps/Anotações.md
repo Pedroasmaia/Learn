@@ -1,6 +1,11 @@
 # Terraform no Azure Infraestrutura como Código e DevOps
 - **Instrutor:** [Higor Barbosa](https://www.linkedin.com/in/higor-barbosa/)
 - **Plataforma:** [Udemy](https://www.udemy.com/course/terraformazure/)
+## Sumário
+1. [Introdução ao IaC e Azure Cloud](#Módulo1IntroduçãoaoIaCeAzureCloud:)
+2. [Terraform - Básico](#Módulo2|Terraform-Básico:)
+3. [Terraform - Remote State](#Módulo6|Terraform-RemoteState:)
+
 
 # Módulo 1 | Introdução ao IaC e Azure Cloud:
 
