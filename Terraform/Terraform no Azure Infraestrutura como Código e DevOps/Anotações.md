@@ -143,3 +143,6 @@ O Backend do terraform identifica onde o Estado é armazenado e onde suas opera�
 
 ## Configurando o Remote Backend:
 - Consultar arquivo: [main.tf](./6-Remote%20State/main.tf)
+## Provisionando *Storage Account*
+- Consultar arquivo: [blobstorage.tf](./6-Remote%20State/blobstorage.tf)
+- Consultar a documentação: [azurerm_storage_account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account)

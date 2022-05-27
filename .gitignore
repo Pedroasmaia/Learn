@@ -1,2 +1,8 @@
+#Ignorar Configurações do Vscode
 .vscode
+#Ignorar Virtualização
 .env
+#Ignorar Arquivos Terraform
+.Terraform
+.Terraform.lock.hcl
+
