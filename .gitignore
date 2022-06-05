@@ -5,4 +5,5 @@
 #Ignorar Arquivos Terraform
 .Terraform
 .Terraform.lock.hcl
-
+terraform.tfstate
+terraform.tfstate.backup

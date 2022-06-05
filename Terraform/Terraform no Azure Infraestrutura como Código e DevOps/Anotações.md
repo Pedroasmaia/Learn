@@ -104,7 +104,7 @@
 
 O Terraform contem dois componentes principais:
 
-- **Core:** O Centro do terraform, e temos duas entradas principais:
+- **Core:** O Centro do Terraform, e temos duas entradas principais:
   - As *configurações* que damos a ele, do que será configurado na nossa infraestrutura
   - E o *State* o estado atual do setup
 
@@ -143,6 +143,18 @@ O Terraform contem dois componentes principais:
 
 - É um componente responsável por interagir com as APIS.
 - Utilitários locais para tarefas(Exemplo gerar números randômicos)
+
+### Terraform Show
+
+- É possível demonstrar o estado atual da infraestrutura em formato json utilizando o comando:
+
+### Terraform Apply
+
+- É possível pular o passo de aprovação com o Comando:
+
+~~~terraform
+  terraform apply -auto-approve
+~~~
 
 ## [Módulo 6 | Terraform - Remote State:](./6-Remote%20State/)
 
