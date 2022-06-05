@@ -156,6 +156,14 @@ O Terraform contem dois componentes principais:
   terraform apply -auto-approve
 ~~~
 
+### Terraform FMT
+
+- Faz a identação do código do terraform com o comando:
+
+~~~terraform
+  terraform fmt
+~~~
+
 ## [Módulo 6 | Terraform - Remote State:](./6-Remote%20State/)
 
 - O Estado do Provisionamento fica salvo em um arquivo chamado *terraform.state*
