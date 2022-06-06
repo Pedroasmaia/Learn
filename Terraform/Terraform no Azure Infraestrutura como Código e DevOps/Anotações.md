@@ -164,6 +164,11 @@ O Terraform contem dois componentes principais:
   terraform fmt
 ~~~
 
+### Trabalhando com Multiprovedor
+
+- Basta inserir em Required Providers
+- Consultar pasta [Multiproviders](./Providers/Multiproviders)
+
 ## [Módulo 6 | Terraform - Remote State:](./6-Remote%20State/)
 
 - O Estado do Provisionamento fica salvo em um arquivo chamado *terraform.state*
