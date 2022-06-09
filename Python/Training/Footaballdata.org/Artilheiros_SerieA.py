@@ -18,11 +18,6 @@ Scores = r.get(SerieA_Scores,headers=headers)
 retorno = Scores.json() #Json Todo
 
 #Informações da Competição
-competition = retorno['competition']  #Pega 'competition' dentro do Json todo
-competition_name = competition['name'] #Pega 'name' dentro de 'competition'
-print(f'O Nome da liga é {competition_name}')
-
-#Listar os 10 Jogadores
 OrderList = 1
 top_scores = retorno['scorers'] #Pega 'scores' no json todo
 print('Posição | Jogador | Gols')
@@ -32,5 +27,4 @@ for players_block in top_scores: #Separa Bloco de Informações dos Jogadores de
     player_goals = players_block['goals'] #Pega os gols de cada jogador
     print(f'{OrderList}° | {player_name} | {player_goals} Gols')
     OrderList = OrderList + 1
-
 
