@@ -10,8 +10,10 @@ load_dotenv()
 api_token = os.environ['key']
 uri = 'https://api.football-data.org/v4/matches/'
 headers = { 'X-Auth-Token': api_token}
-SerieA_Scores = (f'https://api.football-data.org/v4/competitions/SA/scorers?season=2021')
+SerieA_Scores = (f'https://api.football-data.org/v4/competitions/SA/scorers?limit=30')
 Scores = r.get(SerieA_Scores,headers=headers)
+Scores_status = Scores.status_code
+# print(f'HTTPS CODE : {Scores_status}')
 retorno = Scores.json() #Json Todo
 def GoldenShoes():
     search_player = input('Qual jogador quer ver?')
@@ -27,6 +29,6 @@ def GoldenShoes():
         print(f'Esse jogador fez {player_goals[indice_player]} gols')
         break
     else:
-        print('Esse jogador  não esta entre o top 10 marcadores da liga')
-GoldenShoes()    
+        print('Esse jogador não esta entre os 30 maiores marcadores da liga')
+GoldenShoes()
 
